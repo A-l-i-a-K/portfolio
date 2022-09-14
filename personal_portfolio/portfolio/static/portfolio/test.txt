@@ -1,0 +1,10 @@
+NumPy
+Pandas
+Matplotlib
+TensorFlow 
+Django
+Flask
+PyQt5
+ElasticSearch
+Kafka
+Python Celery
