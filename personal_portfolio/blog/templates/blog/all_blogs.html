@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
-</head>
-<body>
-<h1>Hello blog</h1>
+{% extends 'portfolio\base.html' %}
+{% block content %}
+
+<h1>Мое обучение</h1>
 <br>
-<a href="{% url 'home' %}">Home</a>
-<br>
-<h2>I write {{ blogs.count }} blog{{ blogs.count|pluralize }}</h2>
+
+<h2>Я завершил обучение {{ blogs.count }} курсов:</h2>
 
 {% for blog in blogs %}
 
 <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
 <h2>{{ blog.date|date:' d M Y' }}</h2>
 <h2>{{ blog.description|truncatechars:100 }}</h2>
-
 {% if blog.url %}
-<br><a href="{{ project.url }}">Link</a>
-{% endif%}
-
+<a href="{{ blog.url }}">Сертификат</a>
+{% endif %}
+<br>
+<br>
 {% endfor %}
 
-</body>
-</html>
+{% endblock %}
+
