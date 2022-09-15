@@ -34,17 +34,24 @@
           <li class="nav-item">
             <a class="nav-link" href="{% static "portfolio\resume.txt" %}">Resume</a>
           </li>
-            <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-          Мои работы
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="{% url 'blog:all_blogs' %}">Моё обучение</a>
-          <a class="dropdown-item" href="{% url 'projects' %}">Мои проекты</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:all_blogs' %}">Моё обучение</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'projects' %}">Мои проекты</a>
+          </li>
+<!--          <li class="nav-item dropdown">-->
+<!--        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">-->
+<!--          Мои работы-->
+<!--        </a>-->
+<!--        -->
+<!--        <div class="dropdown-menu">-->
+<!--          <a class="dropdown-item" href="{% url 'blog:all_blogs' %}">Моё обучение</a>-->
+<!--          <a class="dropdown-item" href="{% url 'projects' %}">Мои проекты</a>-->
+<!--          <div class="dropdown-divider"></div>-->
+<!--          <a class="dropdown-item" href="#">Something else here</a>-->
+<!--        </div>-->
+<!--      </li>-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
           Мои сети

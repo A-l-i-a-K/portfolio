@@ -4,8 +4,9 @@
 <h1>Мое обучение</h1>
 <br>
 
-<h2>Я завершил обучение {{ blogs.count }} курсов:</h2>
-
+<h2>Я успешно прошел {{ blogs.count }} курсов:</h2>
+<br>
+<br>
 {% for blog in blogs %}
 
 <a href="{% url 'blog:detail' blog.id %}" target="_blank"><h2>{{ blog.title }}</h2></a>
